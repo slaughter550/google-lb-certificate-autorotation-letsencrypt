@@ -15,7 +15,7 @@ Setup
 ----
 1. Clone repo locally
 2. Edit the variables `SITE`, `NAME` and `TARGET_PROXY` inside of [update-cert.sh](update-cert.sh#7-9) to configure the domain
-3. Edit `crontab -e` and a daily record to perform the update.
+3. Edit `crontab -e` and add a daily record to perform the update.
 > A scheduler is recommended for prod envs. This is just a bootstrap example.
 ```
 0 0 * * * /root/update-cert.sh >> /root/logs/cron 2>&1
